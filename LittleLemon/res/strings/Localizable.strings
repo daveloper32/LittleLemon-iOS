@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  LittleLemon
+
+  Created by David Esteban Hernández Garzón on 18/04/23.
+  
+*/
+
+"app_name" = "Little Lemon";
+"title" = "Little Lemon";
+"location" = "Chicago";
+"description" = "We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.";
+"lab_order_for_delivery" = "Order for delivery!";
+"lab_all" = "All";
+"lab_starters" = "Starters";
+"lab_mains" = "Mains";
+"lab_desserts" = "Desserts";
+"lab_sides" = "Sides";
