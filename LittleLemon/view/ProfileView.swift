@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @Environment(\.managedObjectContext) private var viewContext
     var manager: LittleLemonUserDefaultsManager = LittleLemonUserDefaultsManager()
+    private let homeViewModel: HomeViewModel = HomeViewModel()
     @State private var navigateToHomeView: Bool = false
     @State private var navigateToOnBoardingView: Bool = false
     @State var firstName: String = ""
@@ -44,6 +46,7 @@ struct ProfileView: View {
                         isEmailNotificationsNewsletterChecked: $isEmailNotificationsNewsletterChecked
                     ).padding(.bottom, 8)
                     Button {
+                        homeViewModel.deleteAllObjects(viewContext)
                         manager.clearData()
                         navigateToOnBoardingView = true
                     } label: {

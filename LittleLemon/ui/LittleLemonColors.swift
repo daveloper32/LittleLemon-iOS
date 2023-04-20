@@ -20,6 +20,7 @@ class LittleLemonColors {
     let White = Color("FFFFFF")
     let WhiteTransparent = Color("A6FFFFFF")
     let Black = Color("333333")
+    let DarkGray = Color("444444")
 }
 
 extension Color {
